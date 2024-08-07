@@ -10,3 +10,4 @@ statsmodels
 pathlib
 keras
 scikit-learn
+tensorflow
