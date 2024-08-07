@@ -166,18 +166,18 @@ col1, col2 = st.columns(2)
 with col1:
     checkbox_eur = st.checkbox('EUR/PLN Data set',key = "<lstm1>")    
     
-if checkbox_eur:
-    LSTM_Model(n_rr_eur)
-    _forecast_eur = pd.read_excel('forecast.xlsx')
-    st.subheader(f'EUR/PLN prediction for today {today} is {list(_forecast_eur[0])}', divider="blue")
-    _forecast_eur.to_excel('forecast_eur.xlsx')
+    if checkbox_eur:
+        LSTM_Model(n_rr_eur)
+        _forecast_eur = pd.read_excel('forecast.xlsx')
+        st.subheader(f'EUR/PLN prediction for today {today} is {list(_forecast_eur[0])}', divider="blue")
+        _forecast_eur.to_excel('forecast_eur.xlsx')
 
 with col2:
     checkbox_usd = st.checkbox('USD/PLN Data set',key = "<lstm2>")    
     
-if checkbox_usd:
-    LSTM_Model(n_rr_usd)
-    _forecast_usd = pd.read_excel('forecast.xlsx')
-    st.subheader(f'USD/PLN prediction for today is {list(_forecast_usd[0])}', divider="blue")
-    _forecast_usd.to_excel('forecast_usd.xlsx')
+    if checkbox_usd:
+        LSTM_Model(n_rr_usd)
+        _forecast_usd = pd.read_excel('forecast.xlsx')
+        st.subheader(f'USD/PLN prediction for today is {list(_forecast_usd[0])}', divider="blue")
+        _forecast_usd.to_excel('forecast_usd.xlsx')
 
