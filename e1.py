@@ -73,8 +73,8 @@ def rr_usd_pln():
 
 # D+1 LSTM Prediction Model
 
-from scikit-learn import metrics
-from scikit-learn.preprocessing import MinMaxScaler
+from sklearn import metrics
+from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import Dense, Activation, LSTM
 
