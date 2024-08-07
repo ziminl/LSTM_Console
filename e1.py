@@ -186,4 +186,4 @@ with col2:
         _forecast_usd.to_excel('forecast_usd.xlsx')
 
 if st.button('Run LSTM Model',key = "<char3>"):
-    yees3 = rr_eur_pln()
+    yees3 = LSTM_Model()
