@@ -169,7 +169,7 @@ with col1:
     if checkbox_eur:
         LSTM_Model(n_rr_eur)
         _forecast_eur = pd.read_excel('forecast.xlsx')
-        st.subheader(f'EUR/PLN prediction for today {today} is {list(_forecast_eur[0])}', divider="blue")
+        st.subheader(f'EUR/PLN prediction for today is {list(_forecast_eur[0])}', divider="blue")
         _forecast_eur.to_excel('forecast_eur.xlsx')
 
 with col2:
