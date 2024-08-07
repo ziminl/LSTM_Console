@@ -185,3 +185,5 @@ with col2:
         st.subheader(f'USD/PLN prediction for today is {list(f_usd[0])}', divider="blue")
         _forecast_usd.to_excel('forecast_usd.xlsx')
 
+if st.button('Run LSTM Model',key = "<char3>"):
+    yees3 = rr_eur_pln()
